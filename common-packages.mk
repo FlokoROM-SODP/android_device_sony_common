@@ -34,31 +34,14 @@ PRODUCT_PACKAGES += \
     libaudioroute \
     tinymix
 
-# Audio effects
-PRODUCT_PACKAGES += \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
-    libqcompostprocbundle
-
 # Audio deps
 PRODUCT_PACKAGES += \
     libfmq
 
 # GFX
 PRODUCT_PACKAGES += \
-    libhdmi \
     libqdutils \
     libqdMetaData
-
-# OMX
-PRODUCT_PACKAGES += \
-    libc2dcolorconvert \
-    libstagefrighthw \
-    libOmxCore \
-    libmm-omxcore \
-    libOmxVdec \
-    libOmxVdecHevc \
-    libOmxVenc
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -100,14 +83,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NfcNci \
     Tag
-
-# CAMERA
-PRODUCT_PACKAGES += \
-    libmmcamera_interface \
-    libmmjpeg_interface \
-    libmmlib2d_interface \
-    libmm-qcamera \
-    libqomx_core
 
 # Media
 PRODUCT_PACKAGES += \
@@ -157,7 +132,7 @@ PRODUCT_PACKAGES += \
 
 # libRSDriver_adreno dependency
 PRODUCT_PACKAGES += \
-    libLLVM
+    libLLVM_android
 
 # ExtendedSettings
 PRODUCT_PACKAGES += \

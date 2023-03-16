@@ -18,7 +18,6 @@ PRODUCT_PACKAGES += \
 
 # Graphics allocator/mapper
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display
 
 # android.hardware.graphics.allocator@3.0::IAllocator, and
@@ -61,11 +60,9 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor
 ifeq ($(TARGET_USES_64BIT_CAMERA),true)
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.5-impl:64 \
     android.hardware.camera.provider@2.5-service_64
 else
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.5-impl:32 \
     android.hardware.camera.provider@2.5-service
 endif
 
@@ -123,7 +120,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service-lazy \
-    android.hardware.drm@1.3-service-lazy.clearkey
 
 # Usb HAL
 ifeq ($(filter 4.14, $(SOMC_KERNEL_VERSION)),)
